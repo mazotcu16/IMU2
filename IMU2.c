@@ -25,7 +25,7 @@ void IMU2_Init()
 	  initAK8963(&hi2c5);
 	  MPU9255_Init(&hi2c5);
 }
-void IMU2_Get_Data(IMU *IMU_t)
+void IMU2_Get_Data(IMU2 *IMU_t)
 {
 	  MPU9250_Read_Raw_acc(&mpu_st);
 	  MPU9250_Read_Raw_gyro(&mpug_st);

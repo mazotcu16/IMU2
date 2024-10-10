@@ -5,34 +5,34 @@
  *      Author: PC_6285_YÄ°
  */
 
-#ifndef IMU2_IMU2_H_
-#define IMU2_IMU2_H_
+#ifndef IMU_IMU_H_
+#define IMU_IMU_H_
 #include "stdint.h"
 
 typedef struct{
 float x_ekseni;
 float y_ekseni;
 float z_ekseni;
-}Ivmeolcer2;
+}Ivmeolcer;
 
 typedef struct{
 float x_ekseni;
 float y_ekseni;
 float z_ekseni;
-}Aciolcer2;
+}Aciolcer;
 
 typedef struct{
 float x_ekseni;
 float y_ekseni;
 float z_ekseni;
-}Manyetometre2;
+}Manyetometre;
 
 typedef struct{
-Ivmeolcer2 Ivmeolcer_t;
-Aciolcer2 Aciolcer_t;
-Manyetometre2 Manyetometre_t;
-}IMU2;
+Ivmeolcer Ivmeolcer_t;
+Aciolcer Aciolcer_t;
+Manyetometre Manyetometre_t;
+}IMU;
 
 void IMU2_Init();
-void IMU2_Get_Data(IMU2 *IMU_t);
+void IMU2_Get_Data(IMU *IMU_t);
 #endif /* IMU_IMU_H_ */
